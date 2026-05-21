@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football Clubs Dashboard</title>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-inner">
+            <div class="title-block">
+                <span class="tag">⚽ ELITE FOOTBALL ANALYTICS</span>
+                <h1>Football Clubs<br><span>Dashboard</span></h1>
+                <p class="subtitle">Revenue · Transfers · Salaries · Trophies · 2020–2024</p>
+            </div>
+            <div class="filter-block">
+                <label>SELECT SEASON</label>
+                <select id="yearSelect"><option value="all">All Years (Average)</option></select>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="chart-card">
+                <div class="chart-label">Club Revenue (€ Million)</div>
+                <div id="revenueChart" class="chart-area"></div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-label">Transfer Spending (€ Million)</div>
+                <div id="transferChart" class="chart-area"></div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-label">Avg Player Salary (€ Thousand/yr)</div>
+                <div id="salaryChart" class="chart-area"></div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-label">Trophies Won Distribution</div>
+                <div id="trophiesPie" class="chart-area"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
